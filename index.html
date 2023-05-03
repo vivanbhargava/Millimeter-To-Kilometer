@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Millimeter To Kilometer</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Millimeter</label>
+            <input id="inputmilli" type="number" placeholder="Millimeter" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Kilometer: <span id="outputkilo"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputkilo").innerHTML = valNum / 1e+6;
+        }
+    </script>
+
+</body></html>
